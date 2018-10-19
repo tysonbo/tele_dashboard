@@ -1,14 +1,16 @@
 {
   "name": "dashboard",
   "version": "0.1.0",
+  "description": "A Vue.js Dashboard prototype project",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service serve" 
+    "start": "node server.js"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "vue": "^2.5.17"
   },
   "devDependencies": {
