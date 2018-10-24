@@ -64,3 +64,9 @@ typings/
 /src
 /public
 /node_modules/express
+/src/dashboard/Dashboard.vue
+/src/home/HomePage.vue
+/src/router/index.js
+/src/store
+/src/store/modules/stats.js
+/src/store/index.js
