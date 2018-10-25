@@ -7,7 +7,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service serve"
+    "start": "node server.js",
+    "heroku-postinstall": "npm install && npm run build"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -19,6 +20,7 @@
     "hchs-vue-charts": "^1.2.8",
     "highcharts": "^6.2.0",
     "highcharts-vue": "^1.2.0",
+    "serve-static": "^1.13.2",
     "startbootstrap-sb-admin": "^5.0.2",
     "vue": "^2.5.17",
     "vue-chartjs": "^3.4.0",
