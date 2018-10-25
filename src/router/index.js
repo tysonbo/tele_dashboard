@@ -5,7 +5,7 @@ import Dashboard from '../dashboard/Dashboard.vue';
 import VueChartJS from '../chart-examples/VueChartJS.vue'
 import VueChartKick from '../chart-examples/VueChartKick.vue';
 import VueCharts from '../chart-examples/VueCharts.vue';
-//import HighCharts from 'highcharts-vue';
+import ChartExamples from '../home/ChartExamples.vue';
 
 Vue.use(Router);
 
@@ -27,7 +27,12 @@ export default new Router({
 
   },
   {
-    path: '/chart-example',
+    path: '/chartexamples',
+    name: 'ChartExamples',
+    component: ChartExamples
+  },
+  {
+    path: '/chartjs',
     name: 'VueChartJS',
     component: VueChartJS
   },

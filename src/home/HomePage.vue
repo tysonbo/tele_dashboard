@@ -351,13 +351,13 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">26</div>
-                                    <div>New Comments!</div>
+                                    <div>Contact Routing</div>
                                 </div>
                             </div>
                         </div>
                         <a href="#">
                             <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
+                                <span class="pull-left">View Details </span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                 <div class="clearfix"></div>
                             </div>
@@ -373,7 +373,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">12</div>
-                                    <div>New Tasks!</div>
+                                    <div>IVR</div>
                                 </div>
                             </div>
                         </div>
@@ -395,7 +395,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">124</div>
-                                    <div>New Orders!</div>
+                                    <div>CONNECT</div>
                                 </div>
                             </div>
                         </div>
@@ -409,7 +409,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-red">
+                    <div class="panel panel-red panel_purple">
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
@@ -417,7 +417,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
+                                    <div>CCMT</div>
                                 </div>
                             </div>
                         </div>
@@ -436,30 +436,15 @@
                 <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Call Volume
                             <div class="pull-right">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                        Actions
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu pull-right" role="menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div id="morris-area-chart"></div>
+                                <div id="app">
+                                    <highcharts :options="chartOptions" ref="highcharts"></highcharts>                                
+                                </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -887,13 +872,28 @@
 </template>
 
 <script>
+import {Chart} from 'highcharts-vue';
+import exportingInit from 'highcharts/modules/exporting';
 
-export default {
+export default {  
   name: "HomePage",
   props: {
-    msg: String
+    msg: String,    
+  },
+  components: {   
+      highcharts: Chart    
+  },
+    data() {
+        return {
+        chartOptions: {
+            series: [{
+            data: [1,2,3] // sample data
+            }]
+        }
+    }
   }
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -901,5 +901,23 @@ export default {
 .home {
   margin: 0px;
   padding: 0px;
+}
+
+/* .panel-purple > .panel-red > .panel-heading{
+    border-color: #5339Be;
+    color: white;
+    background-color: #5339Be;
+
+} */
+
+.panel-red > .panel-heading {
+    border-color: #5339Be;
+    color: white;
+    background-color: #5339Be;
+    border-color: #5339Be;
+    border-top-color: rgb(83, 57, 190);
+    border-right-color: rgb(83, 57, 190);
+    border-bottom-color: rgb(83, 57, 190);
+    border-left-color: rgb(83, 57, 190);
 }
 </style>
