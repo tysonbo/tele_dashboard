@@ -451,7 +451,7 @@
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Call Transfers
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -542,7 +542,7 @@
                                 </div>
                                 <!-- /.col-lg-4 (nested) -->
                                 <div class="col-lg-8">
-                                    <div id="morris-bar-chart"></div>
+                                    <highcharts :options="barChartOptions" ref="highcharts"></highcharts>                                
                                 </div>
                                 <!-- /.col-lg-8 (nested) -->
                             </div>
@@ -873,7 +873,8 @@
 <script>
 import {Chart} from 'highcharts-vue';
 import chartData from './chartdata';
-import piechartdata from './piechartdata'
+import piechartdata from './piechartdata';
+import barchartdata from './barchartdata';
 
 export default {  
   name: "HomePage",
@@ -937,7 +938,7 @@ export default {
                 }]
         },
         pieChartOptions: piechartdata,
-                
+        barChartOptions: barchartdata,                
     }
   }
 };

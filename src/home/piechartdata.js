@@ -22,7 +22,7 @@ const piechartdata = {
         }
     },
     series: [{
-        name: 'Business Units',
+        name: 'Business Unit',
         colorByPoint: true,
         data: [{
             name: 'Service',
@@ -42,7 +42,7 @@ const piechartdata = {
             name: 'Support Center',
             y: 2.7
         }, {
-            name: 'Abandoned',
+            name: 'No Business Unit',
             y: 1.3
         }]
     }]    
