@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="https://www.google.com">SB Admin v2.0</a>
+                <a class="navbar-brand" href="#">Telecom Dashboard</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -246,10 +246,10 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Flot Charts</a>
+                                    <a href="flot.html">Manager Charts</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a href="morris.html">Operations Charts</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -668,53 +668,53 @@
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                            <i class="fa fa-bell fa-fw"></i> Problem Calls
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <i class="fa fa-warning fa-fw"></i> Problem Call
                                     <span class="pull-right text-muted small"><em>4 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                   <i class="fa fa-warning fa-fw"></i> Problem Call
                                     <span class="pull-right text-muted small"><em>12 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                     <i class="fa fa-warning fa-fw"></i> Problem Call
                                     <span class="pull-right text-muted small"><em>27 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                               <i class="fa fa-warning fa-fw"></i> Problem Call
                                     <span class="pull-right text-muted small"><em>43 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <i class="fa fa-warning fa-fw"></i> Problem Call
                                     <span class="pull-right text-muted small"><em>11:32 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
+                                <i class="fa fa-warning fa-fw"></i> Problem Call
                                     <span class="pull-right text-muted small"><em>11:13 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
+                                   <i class="fa fa-warning fa-fw"></i> Problem Call
                                     <span class="pull-right text-muted small"><em>10:57 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
+                                 <i class="fa fa-warning fa-fw"></i> Problem Call
                                     <span class="pull-right text-muted small"><em>9:49 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-money fa-fw"></i> Payment Received
+                                   <i class="fa fa-warning fa-fw"></i> Problem Call
                                     <span class="pull-right text-muted small"><em>Yesterday</em>
                                     </span>
                                 </a>
