@@ -6,7 +6,7 @@ const piechartdata = {
         type: 'pie'
     },
     title: {
-        text: 'Screen Pops Per Business Unit'
+        text: 'CONNECT Daily Screen Pops Volume'
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -14,41 +14,36 @@ const piechartdata = {
     plotOptions: {
         pie: {
             allowPointSelect: true,
-            cursor: 'pointer'
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
         }
-    },    
+    },
     series: [{
-        name: 'Brands',
+        name: 'Business Units',
         colorByPoint: true,
         data: [{
-            name: 'Chrome',
-            y: 61.41,
+            name: 'Service',
+            y: 42.0,
             sliced: true,
             selected: true
         }, {
-            name: 'Internet Explorer',
-            y: 11.84
+            name: 'Sales',
+            y: 27.0
         }, {
-            name: 'Firefox',
-            y: 10.85
+            name: 'Claims',
+            y: 18.0
         }, {
-            name: 'Edge',
-            y: 4.67
+            name: 'Commercial Lines',
+            y: 10.0
         }, {
-            name: 'Safari',
-            y: 4.18
+            name: 'Support Center',
+            y: 2.7
         }, {
-            name: 'Sogou Explorer',
-            y: 1.64
-        }, {
-            name: 'Opera',
-            y: 1.6
-        }, {
-            name: 'QQ',
-            y: 1.2
-        }, {
-            name: 'Other',
-            y: 2.61
+            name: 'Abandoned',
+            y: 1.3
         }]
     }]    
 }

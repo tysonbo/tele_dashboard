@@ -727,7 +727,7 @@
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i> CONNECT Screen Pops
                         </div>
                         <div class="panel-body">
                             <highcharts :options="pieChartOptions" ref="highcharts"></highcharts>                            
@@ -872,7 +872,6 @@
 
 <script>
 import {Chart} from 'highcharts-vue';
-import exportingInit from 'highcharts/modules/exporting';
 import chartData from './chartdata';
 import piechartdata from './piechartdata'
 
