@@ -255,77 +255,21 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Views<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
+                                    <a href="flot.html">Support</a>
                                 </li>
                                 <li>
-                                    <a href="buttons.html">Buttons</a>
+                                    <a href="morris.html">Relationship Center</a>
                                 </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
+                                 <li>
+                                    <a href="morris.html">Business Managers</a>
                                 </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
-                            </ul>
+                           </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
+                          
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -347,7 +291,7 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-comments fa-5x"></i>
+                                    <i class="fa fa-arrow-right fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">26</div>
@@ -369,7 +313,7 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
+                                    <i class="fa fa-microphone fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">12</div>
@@ -391,7 +335,7 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                    <i class="fa fa-puzzle-piece fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">124</div>
@@ -413,7 +357,7 @@
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-support fa-5x"></i>
+                                    <i class="fa fa-headphones fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge">13</div>
@@ -920,22 +864,35 @@ export default {
                     borderWidth: 0
                 },
                 series: [{
-                    name: 'Claims',
-                    data: [7507, 7507, 7507, 7507, 7507, 7507, 7507, 7507, 7507, 7507, 7507, 7507, 7507, 7507]
-                }, {
-                    name: 'Commercial Lines',
-                    data: [4827, 4827, 4827, 4827, 4827, 4827, 4827, 4827, 4827, 4827, 4827, 4827, 4827, 4827]
-                }, {
-                    name: 'Servicing',
-                    data: [3217, 3217, 3217, 3217, 3217, 3217, 3217, 3217, 3217, 3217, 3217, 3217, 3217, 3217]
-                }, {
-                    name: 'Sales',
-                    data: [1787, 1787, 1787, 1787, 1787, 1787, 1787, 1787, 1787, 1787, 1787, 1787, 1787, 1787]
-                },
-                {
-                    name: 'Support Center',
-                    data: [536, 536, 536, 536, 536, 536, 536, 536, 536, 536, 536, 536, 536, 536]
-                }]
+
+name: 'Claims',
+
+data: [1207, 1389, 1062, 2582, 2620, 1447, 1329, 3813, 4764, 2380, 1143, 2234, 4536, 7507]
+
+}, {
+
+name: 'Commercial Lines',
+
+data: [4827, 5327, 3782, 4730, 4772, 3279, 2732, 6285, 7184, 6704, 5921, 4573, 3821, 2453]
+
+}, {
+
+name: 'Servicing',
+
+data: [1289, 1317, 1121, 2217, 3217, 1289, 1746, 4296, 5137, 4862, 3549, 2810, 5830, 6217]
+
+}, {
+
+name: 'Sales',
+
+data: [2189, 3217, 4321, 4617, 3289, 2229, 1461, 4960, 5374, 4626, 3946, 3807, 5304, 6721]
+
+},
+
+{
+name: 'Support Center',
+data: [536, 368, 628, 691, 745, 821, 906, 846, 429, 619, 643, 737, 429, 306]
+}]
         },
         pieChartOptions: piechartdata,
         barChartOptions: barchartdata,                
